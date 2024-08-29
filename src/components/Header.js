@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -7,10 +8,9 @@ const Header = () => {
       <div className="logo">畅霄科技</div>
       <nav>
         <ul>
-          <li><a href="#about">关于我们</a></li>
-          <li><a href="#services">差旅服务</a></li>
-          <li><a href="#membership">会员权益</a></li>
-          <li><a href="#contact">联系我们</a></li>
+          <li><Link to="/">首页</Link></li>
+          <li><Link to="/membership">会员权益</Link></li>
+          <li><Link to="/contact">联系我们</Link></li>
         </ul>
       </nav>
     </header>
