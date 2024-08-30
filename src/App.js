@@ -5,6 +5,7 @@ import Contact from './components/Contact';
 import Header from './components/Header';
 import Section from './components/Section';
 import Footer from './components/Footer';
+import Services from './components/Services';
 import './App.css';
 import About from './About';
 
@@ -26,6 +27,7 @@ function App() {
             }
           />
           <Route path="/membership" element={<Membership />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
         </Routes>
