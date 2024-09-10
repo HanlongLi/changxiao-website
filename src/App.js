@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Section from './components/Section';
 import Footer from './components/Footer';
 import Services from './components/Services';
+import PrivacyPolicy from './components/PrivacyPolicy';
 import './App.css';
 import About from './About';
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer />
       </div>

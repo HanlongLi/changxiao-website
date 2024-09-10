@@ -9,9 +9,12 @@ const Header = () => {
       <nav>
         <ul>
           <li><Link to="/">首页</Link></li>
+          <li><Link to="/about">关于我们</Link></li>
           <li><Link to="/membership">会员权益</Link></li>
           <li><Link to="/services">差旅服务</Link></li>
           <li><Link to="/contact">联系我们</Link></li>
+          <li><Link to="/privacy-policy">隐私政策</Link></li>
+          
         </ul>
       </nav>
     </header>
