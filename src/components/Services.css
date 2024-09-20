@@ -1,258 +1,35 @@
-/* 服务容器样式 */
-.services-container {
-  padding: 30px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
-  background: linear-gradient(to bottom right, #b7dde2, #b9fbc0, #ffeb3b);
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  margin: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-
-/* 服务页头样式 */
-.services-header {
-  margin-bottom: 40px;
-  text-align: center;
-}
-
-.services-header h1 {
-  font-size: 2.5em;
-  color: hsl(204, 12%, 92%);
-  margin: 0;
-}
-
-/* 服务各部分样式 */
-.services-intro,
-.services-details,
-.services-features,
-.services-packages,
-.services-app,
-.app-example {
-  background-color: #ffffffde;
+.image-gallery img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 30px;
+
 }
 
-/* 各部分文字样式 */
-.services-intro p,
-.services-details ul,
-.services-features ol,
-.services-packages .package,
-.services-app p,
-.app-example p {
-  font-size: 1.5em;
-  line-height: 2.5;
-  text-align: left;
-  margin: 0;
+.image-gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-
-/* 详细信息和特色列表样式 */
-.services-details ul,
-.services-features ol {
-  padding-left: 20px;
-}
-
-.services-details li,
-.services-features li {
-  margin-bottom: 12px;
-}
-
-.services-details {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-}
-
-.details-content {
-  flex: 1;
-}
-
-.details-content h2 {
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-.details-content ul {
-  margin: 0;
-  padding-left: 20px;
-  list-style-type: disc;
-}
-
-.details-content li {
-  margin-bottom: 10px;
-}
-
-/* 套餐卡片样式 */
-.package {
-  display: flex;
-  align-items: stretch;
-  border: none;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  background-color: #fdfdfd;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-}
-
-.package:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  background-color: #e9e9e9;
-}
-
-.gold-card {
-  border-left: 5px solid #f39c12;
-}
-
-.platinum-card {
-  border-left: 5px solid hsl(180, 70%, 53%);
-}
-
-.package-content {
-  flex: 1;
-}
-
-.package img {
-  max-width: 70%;
-  height: auto;
-  border-radius: 8px;
-  margin-left: 20px;
-  flex-shrink: 0;
-}
-
-/* 对于响应式设计，也可以适当调整图片的宽度 */
 @media (max-width: 768px) {
-  .package img {
-    max-width: 150px;
-  }
-}
-
-/* 标题样式 */
-.services-container h2 {
-  font-size: 2em;
-  color: #2c3e50;
-  border-bottom: 2px solid hsl(0, 4%, 5%);
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-  text-align: left;
-  background: linear-gradient(to right, hsl(0, 0%, 0%), #f39c12);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* 副标题样式 */
-.services-container h3 {
-  font-size: 1.5em;
-  color: #34495e;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-/* 图片样式 （差旅会员）*/
-.services-image {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  display: block;
-  margin: 20px 0;
-  object-fit: cover;
-}
-
-/* 图片样式（其它会员，水果礼盒） */
-.services-app img {
-  max-width: 50%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.services-app .images-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.services-app .images-container img {
-  flex: 1;
-  max-width: 50%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* 示例界面板块样式 */
-.example-image {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.example-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* 响应式设计 */
-@media (max-width: 768px) {
-  .services-container {
-    padding: 20px;
-  }
-
-  .services-header h1 {
-    font-size: 2em;
-  }
-
-  .services-intro,
-  .services-details,
-  .services-features,
-  .services-packages,
-  .services-app {
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 1024px) and (min-width: 769px) {
-  .services-container {
-    padding: 25px;
-  }
-
-  .services-header h1 {
-    font-size: 2.2em;
-  }
-
-  .services-intro,
-  .services-details,
-  .services-features,
-  .services-packages,
-  .services-app {
-    padding: 18px;
-    margin-bottom: 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  .services-container {
-    padding: 15px;
-  }
-
-  .services-header h1 {
-    font-size: 1.8em;
-  }
-
-  .services-intro,
-  .services-details,
-  .services-features,
-  .services-packages,
-  .services-app {
-    padding: 10px;
-    margin-bottom: 15px;
-  }
-
-  .services-image {
-    margin: 10px 0;
+  .image-gallery img {
+    width: 100%;
+    margin-bottom: 5px;
+    /* 减少间距 */
   }
 }
